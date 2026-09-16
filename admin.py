@@ -91,6 +91,7 @@ def library_statistics(books):
         for book in books.values()
         if book.get("available", False)
     )
+
     borrowed = total - available
 
     return total, available, borrowed
