@@ -115,6 +115,7 @@ def main():
     print()
 
     display_books(data.get("books", {}))
+
     print()
     display_loans(data.get("loans", []), data.get("books", {}))
     print()
